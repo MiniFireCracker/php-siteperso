@@ -1,1 +1,4 @@
-put some footer here
+
+<script src=../public/app.js ></script>
+</body>
+</html>
