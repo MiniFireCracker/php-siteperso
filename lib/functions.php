@@ -25,3 +25,13 @@ function getContent(){
 function getPart($name){
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
+
+function getUserData(){
+//	$pathtojson= __DIR__ . '/../data/user.json';
+//	$file_content = file_get_contents("'user.json', $pathtojson"  );
+	$file_content = file_get_contents("../data/user.json");
+	
+	echo $file_content;
+	var_dump(json_decode($file_content, true));
+};
+

@@ -1,5 +1,5 @@
 
-<form action="save.php" method=post>
+<form action="save.php" method=GET>
     
     <div>
     <label>Nom:</label>    
@@ -13,6 +13,7 @@
     <label>Mot de passe:</label>    
     <input type= password id=password name=password>
     </div>  
+    <button type=submit>Submit </button>
 
 </form>
 
