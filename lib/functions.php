@@ -19,7 +19,10 @@ function getContent(){
 		}
 		elseif( $_GET['page'] == 'bio'){
 			include __DIR__.'/../pages/bio.php';
-		}		
+		}
+		elseif( $_GET['page'] == 'admin'){
+			include __DIR__.'/../public/admin.php';
+		}			
 }
 
 function getPart($name){
@@ -31,7 +34,7 @@ function getUserData(){
 //	$file_content = file_get_contents("'user.json', $pathtojson"  );
 	$file_content = file_get_contents("../data/user.json");
 	
-	echo $file_content;
+	echo $file_content . '<br>';
 	var_dump(json_decode($file_content, true));
 };
 
